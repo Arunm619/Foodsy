@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lt_signin"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="#000"
+    tools:context="com.appmerise.foodsy.IntroActivity">
+
+    <Button
+
+        android:id="@+id/btn_login"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_marginBottom="20dp"
+
+        android:layout_marginLeft="82dp"
+
+        android:layout_marginStart="82dp"
+
+        android:background="@null"
+
+        android:text="@string/login"
+
+        android:textColor="#fff"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold" />
+
+
+    <Button
+
+        android:id="@+id/btn_reg"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/btn_login"
+
+        android:layout_alignBottom="@+id/btn_login"
+
+        android:layout_marginLeft="40dp"
+
+        android:layout_marginStart="40dp"
+
+        android:layout_toEndOf="@+id/btn_login"
+
+        android:layout_toRightOf="@+id/btn_login"
+
+        android:background="@null"
+
+        android:text="@string/register"
+
+        android:textColor="#fff"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+

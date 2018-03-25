@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@drawable/foodsy_logo">
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/grey" />
+
+
+    <TextView
+
+        android:id="@+id/tv_hi"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="40dp"
+
+        android:layout_marginTop="70dp"
+
+        android:text="@string/hi"
+
+        android:textColor="#fff"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold" />
+
+
+    <TextView
+
+        android:id="@+id/tv_username"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="70dp"
+
+        android:layout_toRightOf="@id/tv_hi"
+
+        android:text="@string/user_name"
+
+        android:textColor="#fff"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/civ_userprof"
+
+        android:layout_width="100dp"
+
+        android:layout_height="100dp"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_marginRight="25dp"
+
+        android:layout_marginTop="30dp"
+
+        android:src="@drawable/grey"
+
+        app:civ_border_width="7dp" />
+
+
+    <TextView
+
+        android:id="@+id/tv_whatfood"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/tv_hi"
+
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="20dp"
+
+        android:text="What food do you want today?"
+
+        android:textColor="#fff"
+
+        android:textSize="45sp"
+
+        android:textStyle="bold" />
+
+
+    <EditText
+
+        android:id="@+id/et_current_loc"
+
+        android:layout_width="340dp"
+
+        android:layout_height="50sp"
+
+        android:layout_below="@id/tv_whatfood"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="20dp"
+
+        android:background="#fff"
+
+        android:hint="@string/enter_current_location"
+
+        android:textAlignment="center" />
+
+
+    <EditText
+
+        android:id="@+id/et_destination_loc"
+
+        android:layout_width="340dp"
+
+        android:layout_height="50dp"
+
+        android:layout_below="@id/et_current_loc"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="30sp"
+
+        android:background="#fff"
+
+        android:hint="@string/enter_destination_location"
+
+        android:textAlignment="center" />
+
+
+    <CheckBox
+
+        android:id="@+id/cb_dine"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@id/et_destination_loc"
+
+        android:layout_below="@id/et_destination_loc"
+
+        android:layout_marginLeft="20sp"
+
+        android:layout_marginTop="20dp"
+
+        android:background="@null"
+
+        android:text="@string/dine_in"
+
+        android:textColor="#fff"
+
+        android:textSize="25sp"
+
+        android:textStyle="bold" />
+
+
+    <CheckBox
+        android:id="@+id/cb_takeaway"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignRight="@id/et_destination_loc"
+
+        android:layout_below="@id/et_destination_loc"
+
+        android:layout_marginRight="20sp"
+
+        android:layout_marginTop="20dp"
+
+        android:background="@null"
+
+        android:text="takeaway"
+
+        android:textColor="#fff"
+
+        android:textSize="25sp"
+
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_dine"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="25dp"
+
+        android:background="@color/colorPrimary"
+
+        android:text="search"
+
+        android:textColor="#ffff"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+
+        />
+
+
+</RelativeLayout>

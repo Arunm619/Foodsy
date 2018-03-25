@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Foodsy</string>
+    <string name="imagecontentdescription">ImageContentDescriptiom</string>
+    <string name="i_agree_to_terms_and_conditions">I agree to terms and conditions</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="try_again">Try Again</string>
+    <string name="nointernetmessage">No Internet Available Please Try again later</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="title_activity_explore">Explore</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="email_id">Enter Email ID</string>
+    <string name="do_not_have_an_account">Don\'t Have an Account?</string>
+    <string name="userobj">UserObj</string>
+    <string name="username">Username</string>
+    <string name="enter_current_location">Enter Current Location</string>
+    <string name="enter_destination_location">Enter Destination</string>
+    <string name="user_name">Username</string>
+    <string name="hi">Hi</string>
+    <string name="dine_in">Dine In</string>
+</resources>

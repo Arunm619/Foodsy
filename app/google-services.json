@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "315991042149",
+    "firebase_url": "https://foodsy-42baf.firebaseio.com",
+    "project_id": "foodsy-42baf",
+    "storage_bucket": "foodsy-42baf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315991042149:android:a0ca6f1ce5bfaf6b",
+        "android_client_info": {
+          "package_name": "com.appmerise.foodsy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315991042149-chtic0d8macnl9gp7cf1utpmk4avflg9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appmerise.foodsy",
+            "certificate_hash": "48a0c69f565c6ce379dcd9a6dcdab08dd6db37fd"
+          }
+        },
+        {
+          "client_id": "315991042149-tvnb7o7n6s2branlj7if27361htlpfk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOn1c5XOvgYwzqDmsONsPQGnRxrVZVUME"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315991042149-tvnb7o7n6s2branlj7if27361htlpfk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
