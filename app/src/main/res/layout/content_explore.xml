@@ -1,11 +1,586 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
+
+    android:padding="10dp"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.appmerise.foodsy.Explore"
+
     tools:showIn="@layout/app_bar_explore">
 
-</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvtvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/feast_your_taste_buds"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_type1"
+            android:layout_width="match_parent"
+
+            android:layout_height="300dp"
+
+            android:layout_below="@id/tvtvin"
+
+            app:cardCornerRadius="10dp"
+
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="3">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="20dp"
+
+                            android:layout_marginStart="20dp"
+
+                            android:text="In 45 mins"
+
+                            android:textSize="20sp" />
+
+
+                        <Button
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentRight="true"
+
+                            android:layout_centerVertical="true"
+
+                            android:background="@null"
+
+                            android:text="MORE"
+
+                            android:textSize="17sp" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+
+                        tools:ignore="NestedWeights">
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+
+                                android:id="@+id/img_Dominos"
+
+                                android:layout_width="match_parent"
+
+                                android:layout_height="120dp"
+
+                                android:layout_marginRight="3dp"
+
+                                android:scaleType="centerCrop"
+
+                                android:src="@drawable/dominoes" />
+
+
+                            <TextView
+
+                                android:id="@+id/tv_htl_left"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/img_Dominos"
+
+                                android:layout_margin="10dp"
+
+                                android:text="Domino's"
+
+                                android:textSize="17sp" />
+
+
+                            <TextView
+
+                                android:id="@+id/tv_foodgen_left"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/tv_htl_left"
+
+                                android:layout_marginLeft="10dp"
+
+                                android:text="Italian" />
+
+
+                            <RatingBar
+
+                                android:id="@+id/ratbar_restratingleft"
+
+                                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/tv_foodgen_left"
+
+                                android:layout_margin="10dp"
+
+                                android:rating="4" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1">
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+
+                                android:id="@+id/img_Pizzahut"
+
+                                android:layout_width="match_parent"
+
+                                android:layout_height="120dp"
+
+                                android:layout_marginLeft="3dp"
+
+                                android:scaleType="centerCrop"
+
+                                android:src="@drawable/pizaa" />
+
+
+                            <TextView
+
+                                android:id="@+id/tv_htl_right"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/img_Pizzahut"
+
+                                android:layout_margin="10dp"
+
+                                android:text=" Pizza Hut"
+
+                                android:textSize="17sp" />
+
+
+                            <TextView
+
+                                android:id="@+id/tv_foodgen_right"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/tv_htl_right"
+
+                                android:layout_marginLeft="10dp"
+
+                                android:text="Italian" />
+
+
+                            <RatingBar
+
+                                android:id="@+id/ratbar_restratingright"
+
+                                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/tv_foodgen_right"
+
+                                android:layout_margin="10dp"
+
+                                android:rating="4.5" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/cv_type2"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="300dp"
+
+            android:layout_below="@id/cv_type1"
+
+            android:layout_marginTop="15dp"
+
+            app:cardCornerRadius="10dp"
+
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="3">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="20dp"
+
+                            android:layout_marginStart="20dp"
+
+                            android:text="In 70 mins"
+
+                            android:textSize="20sp" />
+
+
+                        <Button
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentRight="true"
+
+                            android:layout_centerVertical="true"
+
+                            android:background="@null"
+
+                            android:text="MORE"
+
+                            android:textSize="17sp" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+
+                        tools:ignore="NestedWeights">
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+
+                                android:id="@+id/img_cookieman"
+
+                                android:layout_width="match_parent"
+
+                                android:layout_height="120dp"
+
+                                android:layout_marginRight="3dp"
+
+                                android:scaleType="centerCrop"
+
+                                android:src="@drawable/cofee" />
+
+
+                            <TextView
+
+                                android:id="@+id/tv_htl_left2"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/img_cookieman"
+
+                                android:layout_margin="10dp"
+
+                                android:text="Cookie Man"
+
+                                android:textSize="17sp" />
+
+
+                            <TextView
+
+                                android:id="@+id/tv_foodgen_left2"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/tv_htl_left2"
+
+                                android:layout_marginLeft="10dp"
+
+                                android:text="Cafe and Dessert" />
+
+
+                            <RatingBar
+
+                                android:id="@+id/ratbar_restratingleft2"
+
+                                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/tv_foodgen_left2"
+
+                                android:layout_margin="10dp"
+
+                                android:rating="4" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1">
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+
+                                android:id="@+id/img_haldirams"
+
+                                android:layout_width="match_parent"
+
+                                android:layout_height="120dp"
+
+                                android:layout_marginLeft="3dp"
+
+                                android:layout_marginStart="3dp"
+
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/haldirams" />
+
+
+                            <TextView
+
+                                android:id="@+id/tv_htl_right2"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/img_haldirams"
+
+                                android:layout_margin="10dp"
+
+                                android:text="Haldiram's"
+
+                                android:textSize="17sp" />
+
+
+                            <TextView
+
+                                android:id="@+id/tv_foodgen_right2"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/tv_htl_right2"
+
+                                android:layout_marginLeft="10dp"
+
+                                android:text="North Indian" />
+
+
+                            <RatingBar
+
+                                android:id="@+id/ratbar_restratingright2"
+
+                                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@id/tv_foodgen_right2"
+
+                                android:layout_margin="10dp"
+
+                                android:rating="4.5" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

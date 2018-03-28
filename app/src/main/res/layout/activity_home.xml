@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
+    android:id="@+id/rl"
 
     android:background="@drawable/foodsy_logo">
 
@@ -150,21 +151,24 @@
         android:hint="@string/enter_destination_location"
 
         android:textAlignment="center" />
+<RadioGroup
+    android:layout_below="@id/et_destination_loc"
+    android:layout_width="match_parent"
+    android:id="@+id/rgtype"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_height="wrap_content">
 
+    <RadioButton
 
-    <CheckBox
-
+        android:layout_marginLeft="40dp"
         android:id="@+id/cb_dine"
+        android:layout_weight="1"
 
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
 
-        android:layout_alignLeft="@id/et_destination_loc"
-
-        android:layout_below="@id/et_destination_loc"
-
-        android:layout_marginLeft="20sp"
 
         android:layout_marginTop="20dp"
 
@@ -176,38 +180,40 @@
 
         android:textSize="25sp"
 
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginStart="40dp" />
 
 
-    <CheckBox
+    <RadioButton
+        android:layout_weight="1"
         android:id="@+id/cb_takeaway"
+        android:layout_marginLeft="40dp"
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
-
-        android:layout_alignRight="@id/et_destination_loc"
-
-        android:layout_below="@id/et_destination_loc"
-
-        android:layout_marginRight="20sp"
 
         android:layout_marginTop="20dp"
 
         android:background="@null"
 
-        android:text="takeaway"
+
+
+        android:text="Takeaway"
 
         android:textColor="#fff"
 
         android:textSize="25sp"
 
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginStart="40dp" />
+
+</RadioGroup>
 
     <Button
         android:id="@+id/btn_go"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cb_dine"
+        android:layout_below="@id/rgtype"
 
         android:layout_centerHorizontal="true"
 

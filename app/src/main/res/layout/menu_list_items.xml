@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:padding="10dp">
+
+
+
+    <TextView
+
+        android:layout_width="260dp"
+
+        android:layout_height="wrap_content"
+
+        android:text="Food Name"
+
+        android:textSize="17sp"
+
+        android:id="@+id/tv_foodname"
+
+        android:fontFamily="casual"/>
+
+
+
+    <TextView
+
+        android:layout_width="260dp"
+
+        android:layout_height="wrap_content"
+
+        android:fontFamily="casual"
+
+        android:text="Food Description. It holds all the ingeredients of the food and the recipes"
+
+        android:layout_below="@id/tv_foodname"
+
+        android:id="@+id/tv_foodDesc"
+
+        />
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/tv_foodname"
+
+        android:layout_toEndOf="@+id/tv_foodDesc"
+
+        android:layout_toRightOf="@+id/tv_foodDesc"
+
+        android:text="RS. 400"
+
+        android:layout_marginLeft="20sp"/>
+
+
+
+    <ImageView
+
+        android:layout_width="20dp"
+
+        android:layout_height="20dp"
+
+        android:src="@drawable/veg"
+
+        android:layout_below="@id/tv_foodDesc"
+
+        android:layout_marginTop="10dp"/>
+
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/tv_foodDesc"
+
+        android:layout_centerHorizontal="true"
+
+        android:text="ORDER FOOD"
+
+        android:textColor="#D30000"
+
+        android:fontFamily="casual"
+
+        android:background="@null"/>
+
+
+
+</RelativeLayout>

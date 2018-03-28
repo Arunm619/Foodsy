@@ -7,10 +7,7 @@
     <string name="nointernetmessage">No Internet Available Please Try again later</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
-    <string name="title_activity_explore">Explore</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
     <string name="sign_in">Sign in</string>
@@ -30,4 +27,23 @@
     <string name="user_name">Username</string>
     <string name="hi">Hi</string>
     <string name="dine_in">Dine In</string>
+    <string name="CurrentLocation">CurrentLocation</string>
+    <string name="DestinationLocation">DestinationLocation</string>
+    <string name="Type">Type</string>
+    <string name="title_activity_explore">ExploreActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="feast_your_taste_buds">Feast your taste buds</string>
+    <string name="hotelname">Hotelname</string>
+    <string name="cookieman">cookieman</string>
+    <string name="haldirams">haldirams</string>
+    <string name="dominos">dominos</string>
+
+    <string name="pizzahut">pizzahut</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

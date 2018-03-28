@@ -25,9 +25,14 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".SignIn" />
         <activity
-            android:name=".Explore"
+            android:name=".ExploreActivity"
             android:label="@string/title_activity_explore"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".HotelsListActivity" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
